@@ -8,7 +8,7 @@ version = "2.0.0"
 description = "Python library for geopolitical supply risk assessment (GeoPolRisk)"
 readme = "README.md"
 requires-python = ">=3.10"
-license = { text = "GPL-3.0-or-later" }
+license = "GPL-3.0-or-later"
 authors = [
   { name = "Anish Koyamparambath", email = "anish.koyamparambath@u-bordeaux.fr" },
   { name = "Thomas Schraml", email = "Thomas.Schraml@uni-bayreuth.de" }
@@ -16,7 +16,7 @@ authors = [
 keywords = ["LCA", "criticality", "geopolitical", "supply-risk", "raw-materials"]
 classifiers = [
   "Development Status :: 4 - Beta",
-  "License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)",
+  #"License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)",
   "Programming Language :: Python :: 3",
   "Programming Language :: Python :: 3.10",
   "Operating System :: OS Independent",

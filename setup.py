@@ -9,7 +9,7 @@ setup(
     author="Anish Koyamparambath, Thomas Schraml",
     author_email="anish.koyamparambath@u-bordeaux.fr, Thomas.Schraml@uni-bayreuth.de",
     url="https://github.com/akoyamp/geopolrisk-py",
-    license="GPL-3.0-or-later",
+    #license="GPL-3.0-or-later",
     classifiers=[
         "License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)",
         "Programming Language :: Python :: 3",
@@ -20,12 +20,12 @@ setup(
     packages=find_packages(where="src", include=["geopolrisk*"]),
     package_dir={"": "src"},
     include_package_data=True,
-    install_requires=[
-        "pandas==2.2.2",
-        "tqdm==4.66.4",
-        "geopy==2.4.1",
-        "openpyxl==3.1.2",
-    ],
+    #install_requires=[
+    #    "pandas==2.2.2",
+    #    "tqdm==4.66.4",
+    #    "geopy==2.4.1",
+    #    "openpyxl==3.1.2",
+    #],
     project_urls={
         "Home": "https://github.com/akoyamp/geopolrisk-py",
         "Documentation": "https://github.com/akoyamp/geopolrisk-py#readme",

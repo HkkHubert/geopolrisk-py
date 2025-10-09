@@ -92,11 +92,13 @@ def gprs_calc(period: list, country: list, rawmaterial: list, region_dict={}):
             rm_db.append(rm)
             period_db.append(year)
             dbid.append(create_id(rm, cvtcountry(ctry, type="ISO"), year))
+            #print(dbid)
         except Exception as e:
             logging.debug("Error while recording data for non regional assessment!", e)
     result = createresultsdf()
     try:
         result["DBID"] = dbid
+        print(result["DBID"])
         result["Country [Economic Entity]"] = ctry_db
         result["Raw Material"] = rm_db
         result["Year"] = period_db

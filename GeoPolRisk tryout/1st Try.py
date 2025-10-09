@@ -3,8 +3,18 @@ import os
 from src.geopolrisk.assessment.main import *
 from src.geopolrisk.assessment.database import database
 
-Years = [2022]
-Countries = ["Germany"]
-Materials = ["Aluminium"]
+########## For the "company" assessment
+from geopolrisk.assessment.core import HHI, importrisk_company, GeoPolRisk
+from geopolrisk.assessment.utils import createresultsdf
+##########
 
-trial = gprs_calc(Years,Countries, Materials)
+Years = [2022]
+Countries = [ "EU", "Airbus"]
+Materials = ["Aluminium", "Titanium", "Copper", "Nickel", "Cobalt", "Rare earth", "Niobium", "Beryllium", "Manganese", "Tantalum", "Magnesite", "Tungsten", "Lithium"]
+AirbusCountriesDict = {
+    "Airbus": ["France", "Germany", "United Kingdom", "Spain"],
+    "EU": database.regionslist["EU"]
+}
+
+trial = gprs_calc(Years, Countries, Materials, region_dict=AirbusCountriesDict)
+

@@ -373,11 +373,11 @@ class database:
     #############################################################
 
     production = tables_world_mining_data
-    # production["HS Code Map"] = (
-    #     production["HS Code Map"]
-    #     .loc[production["HS Code Map"]["HS Code"] != "Not Available"]
-    #     .dropna(subset=["Symbol"])
-    # )
+    production["HS Code Map"] = (
+        production["HS Code Map"]
+        .loc[production["HS Code Map"]["HS Code"] != "Not Available"]
+        .dropna(subset=["Symbol"])
+    )
     filtered_production = production["HS Code Map"].loc[
         production["HS Code Map"]["HS Code"] != "Not Available"
     ]

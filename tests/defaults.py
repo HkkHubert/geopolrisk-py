@@ -57,6 +57,7 @@ ListofMetals = [
     711031,
     810710,
     811291,
+    810890
 ]
 
 
@@ -189,6 +190,7 @@ ListofMetalName = [
     "Rhodium",
     "Cadmium",
     "Gallium",
+    "Titanium Metal"
 ]
 
 
