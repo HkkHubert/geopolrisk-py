@@ -28,7 +28,7 @@ from src.geopolrisk.assessment.database import database
 
 
 #Provide the desired material HS code to perform the analysis
-Resource = 760110
+Resource = 810810
 
 #Mapdf = databases.production["HS Code Map"]
 #if Resource in Mapdf["Reference ID"].tolist():
@@ -39,7 +39,7 @@ Resource = 760110
 Rows = []
 
 ### specify the timeframe to loop through
-start, end = 1995, 2023
+start, end = 2022, 2023
 
 #### loop through all of the years to obtain the temporal data
 start_time = time.time()
@@ -71,6 +71,6 @@ Data = pd.DataFrame(Rows, columns = ["Year", "Importer", "Exporter", "Material",
 print(Data.head())
 print("number of material transactions =", len(Data))
 
-path_to_results = databases.directory + "/databases/export_results_1995_2022.xlsx"
-with pd.ExcelWriter(path_to_results, mode = "a", if_sheet_exists = "replace") as writer:
+path_to_results = databases.directory + "/databases/export_results_unwrought_Ti.xlsx"
+with pd.ExcelWriter(path_to_results) as writer:
     Data.to_excel(writer, sheet_name = str(Resource))

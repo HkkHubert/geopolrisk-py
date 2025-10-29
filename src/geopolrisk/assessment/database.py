@@ -249,6 +249,8 @@ class database:
         "Tellurium",
         "Tin",
         "Titanium (TiO2)",
+        "Titanium Metal",
+        "Titanium Metal Unwrought",
         "Tungsten (W)",
         "Uranium (U3O8)",
         "Vanadium (V)",
